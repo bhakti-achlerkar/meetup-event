@@ -1,0 +1,21 @@
+{
+  "extends": "eslint:recommended",
+  "globals": {
+    "window": true,
+    "document": true,
+    "shallow": true,
+    "mount": true
+  },
+  "env": {
+    "es6": true,
+    "jest": true,
+    "browser": true,
+    "commonjs": true,
+    "node": true
+  },
+  "rules": {
+    "no-console": "off",
+    "strict": ["error", "global"],
+    "curly": "warn"
+  }
+}
