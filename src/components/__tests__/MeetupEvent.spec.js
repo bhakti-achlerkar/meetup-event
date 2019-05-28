@@ -1,5 +1,5 @@
 import React from 'react';
-import Attendees from '../Attendees';
+import MeetupEvent from '../MeetupEvent';
 import renderer from 'react-test-renderer';
 
 const mockResponse = (status, statusText, response) => {
@@ -12,13 +12,11 @@ const mockResponse = (status, statusText, response) => {
   });};
 
 window.fetch = jest.fn().mockImplementation(() =>
-  Promise.resolve(mockResponse(200, null, "[]")));
+  Promise.resolve(mockResponse(200, null, "{name: '',venue:{name:''},group:{name:''}}")));
 
-test('Attendees rendered with event details', () => {
+test('MeetupEvent rendered with event details', () => {
   const component = renderer.create(
-    <Attendees
-      eventId="EVENT_ID"
-      eventGroupName="GROUP_NAME"></Attendees>
+    <MeetupEvent></MeetupEvent>
   );
 
   let tree = component.toJSON();

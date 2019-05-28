@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EventVenue rendered with event details 1`] = `
+<div
+  className="event-host"
+>
+  <span>
+    <i
+      className="fas fa-map-marker fa-lg"
+    />
+  </span>
+  <div>
+    <div>
+       
+      VENUE_NAME
+    </div>
+    <div
+      className="event-address"
+    >
+      <span>
+        Address1
+      </span>
+      <span>
+        Address2
+      </span>
+    </div>
+    <div
+      className="event-address"
+    >
+      CITY
+      , 
+      STATE
+       - 
+      12344
+    </div>
+  </div>
+</div>
+`;

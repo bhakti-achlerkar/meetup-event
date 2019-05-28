@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EventHeader rendered with event details 1`] = `
+<header
+  className="event-header"
+>
+  <h1>
+    EVENT_NAME
+  </h1>
+  <h3
+    className="event-group"
+  >
+    By 
+    GROUP_NAME
+  </h3>
+  <div
+    className="event-time-venue"
+  >
+    <div
+      className="event-time-details"
+    >
+      <i
+        className="fas fa-clock fa-lg"
+      />
+      <div>
+        <div>
+          Invalid Date
+        </div>
+        <div>
+          NaN.NaNAM to NaN.NaNAM
+        </div>
+      </div>
+    </div>
+    <div
+      className="event-host"
+    >
+      <span>
+        <i
+          className="fas fa-map-marker fa-lg"
+        />
+      </span>
+      <div>
+        <div>
+           
+          VENUE_NAME
+        </div>
+        <div
+          className="event-address"
+        >
+          <span />
+          <span />
+        </div>
+        <div
+          className="event-address"
+        >
+          , 
+           - 
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+`;

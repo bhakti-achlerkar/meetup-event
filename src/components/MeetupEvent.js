@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 // import { connect } from 'react-redux';
 import Attendees from './Attendees';
 import queryString from 'query-string';
@@ -30,15 +30,6 @@ class MeetUpEvent extends Component {
       ...initialState
     };
   }
-
-  static propTypes = {
-    meetUpEvent: PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      time: PropTypes.string.isRequired,
-      venue: PropTypes.object.isRequired,
-      attendees: PropTypes.arrayOf(PropTypes.object)
-    })
-  };
 
   componentDidMount() {
     const queryParams = queryString.stringify({
@@ -76,6 +67,7 @@ class MeetUpEvent extends Component {
     return (
       <div className='event-details'>
         <EventHeader
+          duration={meetUpEvent.duration}
           eventName={meetUpEvent.name}
           groupName={meetUpEvent.group.name}
           eventDate={meetUpEvent.time}
@@ -87,7 +79,6 @@ class MeetUpEvent extends Component {
           <div>{ReactHtmlParser(meetUpEvent.description)} </div>
         </div>
         <Attendees
-          duration={meetUpEvent.duration}
           eventId={meetUpEvent.id}
           eventGroupName={URL_NAME}></Attendees>
 

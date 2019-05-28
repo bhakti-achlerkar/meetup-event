@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 import EventVenue from './EventVenue';
 import { formatDate, formatDuration } from '../utils';
 
-const EventHeader = ({ duration = '5400000', eventName='', eventDate, groupName='', venue={} }) => {
+const EventHeader = ({ duration = '5400000',
+  eventName='',
+  eventDate,
+  groupName='',
+  venue={} }) => {
   return (
     <header className="event-header">
       <h1>{eventName}</h1>

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Attendees rendered with event details 1`] = `
+<div
+  className="attendees-container"
+>
+  <h3>
+    Attendees
+  </h3>
+  <div
+    className="rsvp-filters"
+  >
+    <div
+      className="rsvp-filter__yes rsvp-filter__active"
+      onClick={[Function]}
+    >
+      Going
+      <span>
+         (
+        0
+        )
+      </span>
+    </div>
+    <div
+      className="rsvp-filter__no"
+      onClick={[Function]}
+    >
+      Not going
+    </div>
+    <div
+      className="rsvp-filter__waitlist"
+      onClick={[Function]}
+    >
+      Waitlist
+    </div>
+  </div>
+  <div
+    className="attendees-list"
+  />
+</div>
+`;
